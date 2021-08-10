@@ -78,7 +78,9 @@
   <button class="btn-venue-open"><span class="fa fa-map-marker"></span> Map</button>
 </div>
 <script type="text/javascript">
-     
+      window.onload = function(){
+      animateInvitation();
+     }
       function animateInvitation(){
        
 
@@ -118,7 +120,7 @@
         },12000);
        
       }
-      animateInvitation();
+     
       function showMap(){
       $('.container-map').css({"display":"block"}).removeClass('animated slideOutDown').addClass('animated slideInUp');
         $('.container-btn-venue').animate({"bottom":"-100%"});
